@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Right Health Cover</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    :root {
+      --primaryColor: #fff;
+      --secondaryColor: #aace45;
+      --primaryColorAlt: #20385b;
+      --grey: #888888;
+      --black: #101010;
+      --maxWidth: 730px;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      background: var(--primaryColor);
+      font-family: "Poppins", sans-serif;
+      color: var(--black);
+      font-size: 1.2rem;
+    }
+
+    strong {
+      font-size: 1.25rem;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .container {
+      max-width: var(--maxWidth);
+      margin: auto;
+      overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      line-height: 1.5em;
+      margin: 10px 0 15px;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 30px;
+    }
+
+    li.checkmark::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 5px;
+      width: 4px;
+      height: 12px;
+      border: solid var(--secondaryColor);
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    .btn {
+      background-color: var(--secondaryColor);
+      color: var(--primaryColorAlt);
+      padding: 15px 18px;
+      font-size: 1.75rem;
+      /* border-radius: 7px; */
+      border: 1px solid var(--primaryColorAlt);
+      font-weight: bold;
+      cursor: pointer;
+      width: 60%;
+      box-shadow: 0px 5px 10px var(--grey);
+    }
+    .btn:hover {
+      background-color: var(--secondaryColor);
+    }
+
+    .space-top {
+      margin-top: 30px;
+    }
+    .space-bottom {
+      margin-bottom: 30px;
+    }
+    .space {
+      margin: 30px;
+    }
+    #buttons {
+      padding: 20px 0 40px 0;
+    }
+
+    #texts {
+      padding: 25px 15px;
+    }
+
+    #logo {
+      /* padding-top: 10px; */
+    }
+
+    .para {
+      padding-top: 10px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .box-alt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      /* padding-bottom: 20px; */
+    }
+
+    .box .text {
+      flex: 50%;
+    }
+
+    .box .imgbox {
+      flex: 50%;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: var(--secondaryColor);
+
+      margin: auto;
+      text-align: center;
+      color: var(--primaryColorAlt);
+      padding: 10px 5px;
+    }
+
+    /* Media Query: Large Smartphone (Vertical) */
+    @media (max-width: 767px) {
+      .box {
+        padding-bottom: 0px;
+        flex-direction: column-reverse;
+      }
+      .box .text {
+        flex: 100%;
+      }
+
+      .box .imgbox {
+        flex: 100%;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+      }
+
+      .age {
+        flex-wrap: wrap;
+      }
+
+      .agebox {
+        flex: 25%;
+      }
+      .btn {
+        width: 90%;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Sections -->
+      <section id="hero">
+        <img src="images/herohead.jpg" alt="banner" />
+      </section>
+      <section id="texts1">
+        <div class="box">
+          <div class="text">
+            <strong>
+              The Health Booster is one of the best pathway to Live120
+              specifically created to help you TO KICKSTART your health-
+              wellbeing potential and live your best life ever. However, you
+              might not be sure when to start the Health Booster or what
+              benefits the pathway in Health Booster may offer. Fear not, as
+              we’re here to give you the rundown on this daily routines and food
+              ingridients to support your health !</strong
+            >
+          </div>
+          <div class="imgbox">
+            <img src="images/hbp1.jpg" alt="family" />
+          </div>
+        </div>
+        <center>
+          <div class="btn">
+            <a href="#" target="_blank">Join Now</a>
+          </div>
+        </center>
+
+        <div class="box">
+          <div class="text">
+            <strong>Here are some benefits of the pathway:</strong>
+            <ul>
+              <li class="checkmark">Healing your Internal Health</li>
+              <li class="checkmark">Faster Recovery ( injuries )</li>
+              <li class="checkmark">Stress release</li>
+              <li class="checkmark">Immune System upgrade</li>
+              <li class="checkmark">Healthy Eating Habits</li>
+              <li class="checkmark">Improves Health Brain</li>
+              <li class="checkmark">Better Breathing</li>
+            </ul>
+          </div>
+          <div class="imgbox">
+            <img src="images/woman.jpg" alt="family" />
+          </div>
+        </div>
+        <section id="logo">
+          <img src="images/bonus.jpg" alt="banner" />
+        </section>
+        <div class="box">
+          <div class="imgbox">
+            <img src="images/man.png" alt="family" />
+          </div>
+          <div class="text">
+            <strong
+              >When you get your 7 day Health Booster you get Bonus:</strong
+            >
+            <ul>
+              <li class="checkmark">Heath Booster Starter Pack</li>
+              <li class="checkmark">Breakfast Menu Sample</li>
+              <li class="checkmark">Lunch menu Sample</li>
+              <li class="checkmark">Dinner Menu Sample</li>
+              <li class="checkmark">Healthy Shakes Sample</li>
+            </ul>
+          </div>
+        </div>
+        <center>
+          <div class="btn space-bottom">
+            <a href="#" target="_blank">Join Now</a>
+          </div>
+        </center>
+      </section>
+
+      <div class="para">
+        <center>
+          <strong
+            >Once you have purchase your 7 Day Health Booster You will then be
+            assigned to a dedicated team member throughout your 7 day
+            health-wellbeing journey</strong
+          >
+        </center>
+      </div>
+      <div class="box">
+        <div class="text">
+          <strong>You will receive:</strong>
+          <ul>
+            <li class="checkmark">
+              Welcome Email where the Pathway Guide is attached for reading and
+              to download.
+            </li>
+            <li class="checkmark">
+              Starter pack with the necessary steps on how to get started.
+            </li>
+            <li class="checkmark">
+              4 E-Books - Breakfast, Lunch, Dinner, Healthy shakes sample menus.
+            </li>
+            <li class="checkmark">
+              Zoom Link Access to coaching session for Q&A every Wednesday 7pm
+              uk time
+            </li>
+            <li class="checkmark">
+              Personal WhatsApp link to join for all Q&A(life & health coaches)
+              during the journey
+            </li>
+            <li class="checkmark">
+              Every day during the program a quick questionnaire to keep
+              yourself accountability till you develop the habits
+            </li>
+            <li class="checkmark">
+              Free 7- day Access to the Live120 APP lifestyle tracker “ Stay
+              Healthy and Happy ANYWHERE & ANYTIME (unsubscribe anytime) Our
+              priority is you and our mission is for you to become to healthier
+              and happier!
+            </li>
+            <li class="checkmark">
+              Never been a better time to kickstart your Health & Wellbeing The
+              fear of trying something new is temporary the regret last forever
+            </li>
+          </ul>
+        </div>
+      </div>
+      <center>
+        <div class="btn space-bottom">
+          <a href="#" target="_blank">Join Now</a>
+        </div>
+      </center>
+      <section id="logo">
+        <img src="images/foo.jpg" alt="banner" />
+      </section>
+      <footer>© Copyright 2023 – Live120. All Rights Reserved.</footer>
+    </div>
+  </body>
+</html>
