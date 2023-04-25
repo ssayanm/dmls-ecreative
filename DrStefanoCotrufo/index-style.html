@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr Stefano Cotrufo</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Poppins&display=swap");
+    :root {
+      --primaryColor: #fff;
+      --secondaryColor: #8c1700;
+      --primaryColorAlt: #222222;
+      --grey: #888888;
+      --black: #101010;
+      --maxWidth: 730px;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      background: var(--primaryColor);
+      font-family: "Josefin Slab", serif;
+      color: var(--black);
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    strong {
+      font-size: 1.25rem;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .container {
+      max-width: var(--maxWidth);
+      margin: auto;
+      overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      line-height: 1.5em;
+      margin: 10px 0 15px;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 30px;
+    }
+
+    li.checkmark::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 5px;
+      width: 4px;
+      height: 12px;
+      border: solid var(--secondaryColor);
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    .btn {
+      background-color: var(--secondaryColor);
+      color: var(--primaryColor);
+      padding: 15px 25px;
+      font-size: 1.75rem;
+      /* border-radius: 7px; */
+      border: 1px solid var(--primaryColor);
+      font-weight: bold;
+      cursor: pointer;
+      width: 70%;
+      box-shadow: 0px 5px 10px var(--grey);
+    }
+    .btn:hover {
+      background-color: var(--secondaryColor);
+    }
+
+    .space-top {
+      margin-top: 30px;
+    }
+    .space-bottom {
+      margin-bottom: 30px;
+    }
+    .space {
+      margin: 30px;
+    }
+    #buttons {
+      padding: 20px 0 40px 0;
+    }
+
+    #texts {
+      padding: 25px 15px;
+    }
+
+    .para {
+      padding: 5px;
+      /* background-color: var(--primaryColorAlt); */
+      color: var(--primaryColorAlt);
+      font-size: 2rem;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .box-alt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      /* padding-bottom: 20px; */
+    }
+
+    .box .text {
+      flex: 50%;
+    }
+
+    .box .imgbox {
+      flex: 50%;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: var(--secondaryColor);
+      margin: auto;
+      text-align: center;
+      color: var(--primaryColor);
+      padding: 10px 5px;
+    }
+
+    /* Media Query: Large Smartphone (Vertical) */
+    @media (max-width: 767px) {
+      .box {
+        padding-bottom: 0px;
+        flex-direction: column-reverse;
+        padding: 20px;
+      }
+      .box .text {
+        flex: 100%;
+      }
+
+      .box .imgbox {
+        flex: 100%;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Sections -->
+      <section id="hero">
+        <img src="images/homestyle.jpg" alt="banner" />
+      </section>
+      <center>
+        <div class="btn" style="width: 95%; margin-top: -10px">
+          <a
+            href="https://drcotrufo.com/before-and-after/before-and-after-buttock-augmentation-with-fat-transfer/"
+            target="_blank"
+          >
+            Meet the surgeon with the largest experience in UK performing
+            Buttock Augmentation since 2012</a
+          >
+        </div>
+      </center>
+
+      <section id="texts1">
+        <div class="box">
+          <div class="imgbox">
+            <img
+              src="images/dr-stefano-cotrufo.png"
+              alt="family"
+              style="width: 70%"
+            />
+          </div>
+          <div class="text">
+            <p>
+              <strong>Dr Stefano Cotrufo</strong> is a Board Certified Plastic
+              Surgeon with over 15 years’ experience working in London as a
+              <strong
+                >cosmetic surgery and reconstructive microsurgery
+                specialist.</strong
+              >
+
+              He performs a wide range of <strong>cosmetic surgery</strong> and
+              non-surgical procedures from his private practice in Harley
+              Street.
+            </p>
+          </div>
+        </div>
+        <center>
+          <div class="btn">
+            <a href="#" target="_blank">Book a consultation with Dr. Cotrufo</a>
+          </div>
+        </center>
+
+        <div class="box">
+          <div class="text">
+            <strong>Why choose Dr Stefano Cotrufo as your surgeon?</strong>
+            <p>
+              A huge part of Dr Cotrufo’s ethos as a cosmetic and reconstructive
+              surgeon is listening and understanding to your needs whilst
+              offering his honest advice and professional expertise. He has come
+              to be known by patients for his skill, clear communication,
+              discreet nature and his ability to put individuals at ease, making
+              the decision and the overall experience of surgery as comfortable
+              and relaxing as possible.
+            </p>
+            <center>
+              <div class="btn space-bottom">
+                <a href="https://www.instagram.com/drcotrufo/" target="_blank"
+                  >Our Instagram Gallery</a
+                >
+              </div>
+            </center>
+          </div>
+          <div class="imgbox">
+            <img src="images/woman1.jpg" alt="family" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="para">
+          <center>Our Procedures</center>
+        </div>
+        <div class="box">
+          <div class="text">
+            <strong>Body Surgery</strong>
+            <ul>
+              <li class="checkmark">Breast Surgery</li>
+              <li class="checkmark">Arm Surgery</li>
+              <li class="checkmark">Stomach Surgery</li>
+              <li class="checkmark">Leg Surgery</li>
+              <li class="checkmark">Buttock Surgery</li>
+              <li class="checkmark">Genital Surgery</li>
+              <li class="checkmark">Scars/Moles Surgery</li>
+              <li class="checkmark">Post Weight-Loss Surgery</li>
+              <li class="checkmark">Male Surgery</li>
+            </ul>
+          </div>
+          <div class="text">
+            <strong>Face Surgery</strong>
+            <ul>
+              <li class="checkmark">Eye Surgery</li>
+              <li class="checkmark">Nose Surgery</li>
+              <li class="checkmark">Ear Surgery</li>
+              <li class="checkmark">Cheek Surgery</li>
+              <li class="checkmark">Chin & Jaw Surgery</li>
+              <li class="checkmark">Face/Neck Lift</li>
+              <li class="checkmark">Hair Transplant Surgery</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="para">
+          <center>Before and After</center>
+        </div>
+        <div class="box">
+          <div class="imgbox">
+            <img src="images/face1.jpg" alt="family" style="width: 100%" />
+          </div>
+          <div class="imgbox">
+            <img src="images/back1.jpg" alt="family" style="width: 100%" />
+          </div>
+        </div>
+      </section>
+      <center>
+        <div class="btn space-bottom">
+          <a href="#" target="_blank">Book a consultation with Dr. Cotrufo</a>
+        </div>
+      </center>
+      <div class="para">
+        <center>Our Client Testimonials</center>
+      </div>
+
+      <div class="box space-bottom">
+        <img src="images/bonus.png" alt="banner" />
+      </div>
+
+      <section id="logo">
+        <center>
+          <img src="images/foo.png" alt="banner" style="width: 90%" />
+        </center>
+      </section>
+      <footer>
+        © Copyright 2023 – Dr Stefano Cotrufo. All Rights Reserved.
+      </footer>
+    </div>
+  </body>
+</html>
