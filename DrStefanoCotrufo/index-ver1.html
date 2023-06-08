@@ -13,7 +13,7 @@
       --primaryColor: #fff;
       --secondaryColor: #8c1700;
       --primaryColorAlt: #222222;
-      --grey: #888888;
+      --grey: #414141;
       --black: #101010;
       --maxWidth: 730px;
     }
@@ -85,6 +85,16 @@
       margin: 0.1em auto 0;
     }
 
+    .mytitle:after {
+      /* this is the border */
+      content: "";
+      display: block;
+      width: 3em;
+      max-width: 70%;
+      border-bottom: 0.1em solid var(--secondaryColor);
+      margin-top: 1rem;
+    }
+
     .btn {
       background-color: var(--secondaryColor);
       color: var(--primaryColor);
@@ -116,14 +126,21 @@
     }
 
     #texts {
-      padding: 25px 15px;
+      padding: 5px 15px;
     }
 
     .para {
-      padding: 5px;
+      /* padding: 2px; */
       /* background-color: var(--primaryColorAlt); */
       color: var(--primaryColorAlt);
       font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    .highlight {
+      font-size: 3rem;
+      color: var(--secondaryColor);
+      font-weight: bold;
     }
 
     .box {
@@ -138,10 +155,25 @@
     .box-alt {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-wrap: wrap;
       padding-top: 30px;
       /* padding-bottom: 20px; */
+    }
+
+    .box .hero {
+      flex: 65%;
+    }
+
+    .box .col {
+      flex: 35%;
+    }
+
+    .box-alt .col {
+      flex: 20%;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
     }
 
     .box .text {
@@ -154,7 +186,7 @@
     }
 
     footer {
-      background-color: var(--secondaryColor);
+      background-color: var(--grey);
       margin: auto;
       text-align: center;
       color: var(--primaryColor);
@@ -164,6 +196,11 @@
     .underline {
       width: 20px;
       border-top: 5px solid var(--secondaryColor);
+    }
+
+    .bordr {
+      border-bottom: 5px solid var(--secondaryColor);
+      border-radius: 0px 10px 0 100px;
     }
 
     /* Media Query: Large Smartphone (Vertical) */
@@ -181,42 +218,116 @@
         flex: 100%;
       }
 
+      .box-alt .col {
+      flex: 50%;
+      }
+
+      .box .col {
+      flex: 100%;
+    }
+
+
+      .box .hero {
+      flex: 100%;
+      text-align: center;
+    }
+
+
       .btn {
         font-size: 1.2rem;
       }
+
+      .mytitle{
+        text-align: center;
+      }
+
+      .mytitle:after {
+     
+        margin: 0.1em auto 0;
+    }
+
+    .text{text-align: center;}
+
+    .imgbox img{
+      width: 100% !important;
+    }
     }
   </style>
   <body>
     <div class="container">
       <!-- Sections -->
-      <section id="hero"><img src="images/homev2.jpg" alt="banner" /></section>
+      <!-- <section id="hero"><img src="images/homev2.jpg" alt="banner" /></section>
       <center>
         <div class="btn" style="margin-top: -10px">
           <a href="#" target="_blank"> Book an appointment with Dr Cotrufo</a>
         </div>
-      </center>
+      </center> -->
 
       <section id="texts1">
         <div class="box">
-          <div class="imgbox">
+          <div class="hero">
+            <div class="para">
+              <p class="mytitle">
+                <span class="highlight"> Dr Stefano Cotrufo</span> <br />
+                and his clinic
+              </p>
+            </div>
+            <p>
+              Alongside a personal passion for plastic surgery, Dr Cotrufo has
+              come to be known by patients for his exceptional skill, clear
+              communications and discreet nature.
+            </p>
+          </div>
+          <div class="col">
             <img
               src="images/dr-stefano-cotrufo.png"
               alt="family"
-              style="width: 70%"
+              style="width: 90%"
+              class="bordr"
             />
           </div>
-          <div class="text">
-            <p>
-              <strong>Dr Stefano Cotrufo</strong> is a Board Certified Plastic
-              Surgeon with over 15 years’ experience working in London as a
-              <strong
-                >cosmetic surgery and reconstructive microsurgery
-                specialist.</strong
-              >
+        </div>
+        <center>
+          <div class="btn" style="margin-top: -10px">
+            <a href="#" target="_blank"> Book an appointment with Dr Cotrufo</a>
+          </div>
+        </center>
+      </section>
+      <section id="hero">
+        <img src="images/BreastTreatments.jpg" alt="banner" />
 
-              He performs a wide range of <strong>cosmetic surgery</strong> and
-              non-surgical procedures from his private practice in Harley
-              Street.
+        <div class="box-alt">
+          <div class="col">
+            <strong>CARE</strong>
+            <p class="">
+              A huge part of Dr Cotrufo’s ethos as a cosmetic and reconstructive
+              surgeon is listening and understanding your needs whilst offering
+              his honest advice and professional expertise.
+            </p>
+          </div>
+          <div class="col">
+            <strong>TIME</strong>
+            <p class="">
+              We understand your time is valuable. On the first visit to the
+              clinic, you'll meet Dr Cotrufo. He'll take the time to understand
+              your goals and give you a bespoke procedure plan an be there every
+              step of the way.
+            </p>
+          </div>
+          <div class="col">
+            <strong>EXPERTISE</strong>
+            <p class="">
+              Today, we’re able to say with pride that we have some of the most
+              qualified professionals ready to exceed your expectations and
+              provide treatment.
+            </p>
+          </div>
+          <div class="col">
+            <strong>INNOVATION</strong>
+            <p class="">
+              Dr Cotrufo is always researching new and innovative technology
+              partners and the most cutting edge treatments to offer his
+              patients.
             </p>
           </div>
         </div>
@@ -227,109 +338,25 @@
             >
           </div>
         </center>
-
-        <div class="box">
-          <div class="text">
-            <strong>Why choose Dr Stefano Cotrufo as your surgeon?</strong>
-            <p>
-              Dr. Cotrufo is considered to be the best BBL (Brazilian Buttock
-              Lift) surgeon in the UK. <br />Based in Harley Street, London.
-            </p>
-            <p>
-              Buttock lift surgery is an increasingly popular procedure that
-              improves tone and returns definition and contouring to the bottom.
-              The procedure involves transferring a person’s fat from one area
-              of their body to another in order to enhance or augment the
-              buttock.
-            </p>
-            <p>
-              A buttock lift seeks to correct and restore a more youthful
-              appearance to the bottom, hips and thighs.
-            </p>
-          </div>
-          <div class="imgbox">
-            <img src="images/6.jpg" alt="family" />
-          </div>
-        </div>
       </section>
-      <center>
-        <div class="btn space-bottom">
-          <a href="#" target="_blank"> Book an appointment with Dr Cotrufo</a>
-        </div>
-      </center>
-      <section>
-        <div class="para">
-          <center class="title">Our Procedures</center>
-        </div>
-        <div class="box">
-          <div class="imgbox">
-            <img src="images/2.jpg" alt="family" style="width: 90%" />
-          </div>
-          <div class="text">
-            <strong>Body Surgery</strong>
-            <ul>
-              <li class="checkmark">Breast Surgery</li>
-              <li class="checkmark">Arm Surgery</li>
-              <li class="checkmark">Stomach Surgery</li>
-              <li class="checkmark">Leg Surgery</li>
-              <li class="checkmark">Buttock Surgery</li>
-              <li class="checkmark">Genital Surgery</li>
-              <li class="checkmark">Scars/Moles Surgery</li>
-              <li class="checkmark">Post Weight-Loss Surgery</li>
-              <li class="checkmark">Male Surgery</li>
-            </ul>
-          </div>
-        </div>
-        <div class="box" style="margin-top: -30px">
-          <div class="text">
-            <strong>Face Surgery</strong>
-            <ul>
-              <li class="checkmark">Eye Surgery</li>
-              <li class="checkmark">Nose Surgery</li>
-              <li class="checkmark">Ear Surgery</li>
-              <li class="checkmark">Cheek Surgery</li>
-              <li class="checkmark">Chin & Jaw Surgery</li>
-              <li class="checkmark">Face/Neck Lift</li>
-              <li class="checkmark">Hair Transplant Surgery</li>
-            </ul>
-          </div>
-          <div class="imgbox">
-            <img src="images/faces.jpg" alt="family" />
-          </div>
-        </div>
-      </section>
-      <center>
-        <div class="btn space-bottom">
-          <a
-            href="https://drcotrufo.com/before-and-after/before-and-after-buttock-augmentation-with-fat-transfer/"
-            target="_blank"
-            >Access the largest UK gallery of buttock augmentation performed
-            safely by Dr Cotrufo</a
-          >
-        </div>
-      </center>
 
       <section>
-        <div class="para">
-          <center class="title">Before and After</center>
-        </div>
         <div class="box">
           <div class="imgbox">
-            <img src="images/face1.jpg" alt="family" style="width: 100%" />
+            <img src="images/clinic1.jpg" alt="family" style="width: 90%" />
           </div>
-          <div class="imgbox">
-            <img src="images/back1.jpg" alt="family" style="width: 100%" />
+          <div class="text">
+            <strong>ELEGANT, PROFESSIONAL AND WELCOMING</strong>
+            <p>Our consultations are held at 10 Harley Street.</p>
+
+            <p>
+              The boutique clinic accommodates our state of the art equipment as
+              well as providing a comfortable place to relax in.
+            </p>
           </div>
         </div>
-        <center>
-          <div class="btn space-bottom">
-            <a href="https://www.instagram.com/drcotrufo/" target="_blank"
-              >View Our Instagram Gallery</a
-            >
-          </div>
-        </center>
       </section>
-
+      <section id="texts1">
       <div class="para">
         <center class="title">Our Client Testimonials</center>
       </div>
@@ -337,6 +364,14 @@
       <div class="box space-bottom">
         <img src="images/bonus.png" alt="banner" />
       </div>
+      <center>
+        <div class="btn space-bottom" style="margin-top: -10px">
+          <a href="#" target="_blank">
+            Feel beautiful, be beautiful. Discover a new you</a
+          >
+        </div>
+      </center>
+      <section>
 
       <section id="logo">
         <center>
