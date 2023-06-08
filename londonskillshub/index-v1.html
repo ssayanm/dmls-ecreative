@@ -63,6 +63,11 @@
       list-style: none;
       position: relative;
       padding: 0 0 0 30px;
+      text-align: center;
+      margin: 20px;
+      color: var(--secondaryColor);
+      font-weight: bold;
+      font-style: italic;
     }
 
     li.checkmark::before {
@@ -101,7 +106,15 @@
       line-height: 2rem;
       box-shadow: 0px 5px 10px var(--grey);
     }
-    .btn:hover {
+
+    .btn-alt {
+      background-color: red;
+      color: #fff;
+      padding: 5px 20px;
+      font-weight: bold;
+    }
+    .btn:hover,
+    .btn-alt:hover {
       background-color: var(--secondaryColor);
     }
 
@@ -223,7 +236,7 @@
       <section id="texts1">
         <div class="box">
           <div class="text">
-            <strong>When you enrol, you will learn:</strong>
+            <h3 style="text-align: center">When you enrol, you will learn:</h3>
             <ul style="display: none">
               <li class="checkmark">Create financial freedom and success.</li>
               <li class="checkmark">Secure your future.</li>
@@ -239,25 +252,42 @@
             </ul>
             <ul>
               <a href="#" target="_blank">
-                <li class="checkmark">Productivity & Self Improvement</li>
+                <li>
+                  Productivity & Self Improvement -
+                  <span class="btn-alt">Learn More</span>
+                </li>
               </a>
               <a href="#" target="_blank">
-                <li class="checkmark">Business Wealth & Money Making</li>
+                <li>
+                  Business Wealth & Money Making -
+                  <span class="btn-alt">Learn More</span>
+                </li>
               </a>
               <a href="#" target="_blank">
-                <li class="checkmark">Fundamental Health & Fitness</li>
+                <li>
+                  Fundamental Health & Fitness -
+                  <span class="btn-alt">Learn More</span>
+                </li>
               </a>
               <a href="#" target="_blank">
-                <li class="checkmark">Marketing & Promotion</li>
+                <li>
+                  Marketing & Promotion -
+                  <span class="btn-alt">Learn More</span>
+                </li>
               </a>
               <a href="#" target="_blank">
-                <li class="checkmark">Monetise Social Media & Networks</li>
+                <li>
+                  Monetise Social Media & Networks -
+                  <span class="btn-alt">Learn More</span>
+                </li>
               </a>
               <a href="#" target="_blank">
-                <li class="checkmark">Web & Development</li>
+                <li>
+                  Web & Development - <span class="btn-alt">Learn More</span>
+                </li>
               </a>
             </ul>
-            <p>
+            <p style="text-align: center">
               ...and much more! This is the ONLY Life-Changer School , so don’t
               miss it!
             </p>
@@ -265,13 +295,6 @@
             <div class="btn" style="margin-top: -10px">
               <a href="#" target="_blank">Start Learning Today</a>
             </div>
-          </div>
-          <div class="imgbox">
-            <img
-              src="images/stu2.jpg"
-              alt="family"
-              style="width: 90%; margin-left: 10%"
-            />
           </div>
         </div>
         <center style="display: none">
