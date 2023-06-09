@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr Stefano Cotrufo</title>
-
+   
     <link rel="icon" type="image/png" href="images/favicon.ico" />
   </head>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    /* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+
+    @font-face {
+    font-family:"Brandon-Grot-W01-Light";
+    src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e00ba30a-0bf3-4c76-9392-8641fa237a92.eot?#iefix");
+    src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e00ba30a-0bf3-4c76-9392-8641fa237a92.eot?#iefix") format("eot"),
+        url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/69b40392-453a-438a-a121-a49e5fbc9213.woff2") format("woff2"),
+        url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9362bca5-b362-4543-a051-2129e2def911.woff") format("woff"),
+        url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/85060878-ca6c-43cc-ac31-7edccfdca71b.ttf") format("truetype"),
+        url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/47f089a6-c8ce-46fa-b98f-03b8c0619d8a.svg#47f089a6-c8ce-46fa-b98f-03b8c0619d8a") format("svg");
+    font-display: swap;
+}
+
+    /* @import url(//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light); */
     :root {
       --primaryColor: #fff;
       --secondaryColor: #8c1700;
@@ -25,9 +38,10 @@
     body {
       margin: 0 auto;
       background: var(--primaryColor);
-      font-family: "Montserrat", sans-serif;
+      /* font-family: "Montserrat", sans-serif; */
+      font-family: brandon-grot-w01-light, sans-serif;
       color: var(--black);
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1.8rem;
     }
 
@@ -173,7 +187,7 @@
       flex: 20%;
       text-align: center;
       padding: 10px;
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
 
     .box-alt .col strong{
