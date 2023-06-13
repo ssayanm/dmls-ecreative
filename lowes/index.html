@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lowe's Shopper Survey</title>
+
+    <link rel="icon" type="image/png" href="images/favicon1.ico" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+    :root {
+      --primaryColor: #fff;
+      --secondaryColor: #33861e;
+      --primaryColorAlt: #222222;
+      --blue: #2a5fbb;
+      --blue-alt: #286d93;
+      --grey: #888888;
+      --black: #101010;
+      --maxWidth: 730px;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      background: var(--primaryColor);
+      font-family: "Poppins", serif;
+      color: var(--black);
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    strong {
+      font-size: 1.25rem;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .container {
+      max-width: var(--maxWidth);
+      margin: auto;
+      overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      line-height: 1.5em;
+      margin: 10px 0 15px;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 30px;
+    }
+
+    li.checkmark::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 5px;
+      width: 4px;
+      height: 12px;
+      border: solid var(--secondaryColor);
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    .title:after {
+      /* this is the border */
+      content: "";
+      display: block;
+      width: 6em;
+      max-width: 70%;
+      border-bottom: 0.1em solid var(--secondaryColor);
+      margin: 0.1em auto 0;
+    }
+
+    .btn {
+      background-color: var(--secondaryColor);
+      color: var(--primaryColor);
+      padding: 15px 25px;
+      font-size: 1.75rem;
+      /* border-radius: 7px; */
+      border: 1px solid var(--primaryColor);
+      font-weight: bold;
+      cursor: pointer;
+      width: 50%;
+      box-shadow: 0px 5px 10px var(--grey);
+    }
+    .btn:hover {
+      background-color: var(--secondaryColor);
+    }
+
+    .space-top {
+      margin-top: 30px;
+    }
+    .space-bottom {
+      margin-bottom: 30px;
+    }
+    .space {
+      margin: 30px;
+    }
+    #buttons {
+      padding: 20px 0 40px 0;
+    }
+
+    #texts {
+      padding: 5px 15px 20px 15px;
+    }
+
+    .bord {
+      border-top: 3px solid var(--blue-alt);
+    }
+
+    .topbar {
+      background: var(--blue);
+      text-align: center;
+      color: #fff;
+      padding: 5px;
+    }
+
+    footer {
+      background-color: var(--black);
+      margin: auto;
+      text-align: center;
+      color: var(--primaryColor);
+      padding: 10px 5px;
+    }
+
+    .underline {
+      width: 20px;
+      border-top: 5px solid var(--secondaryColor);
+    }
+
+    /* Media Query: Large Smartphone (Vertical) */
+    @media (max-width: 767px) {
+      .box {
+        padding-bottom: 0px;
+        flex-direction: column-reverse;
+        padding: 20px;
+      }
+      .box .text {
+        flex: 100%;
+      }
+
+      .box .imgbox {
+        flex: 100%;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Sections -->
+      <section class="topbar">
+        Over $4,000,000 in Offers givent out so far
+      </section>
+      <section id="hero">
+        <center>
+          <img src="images/logolowe.jpg" alt="banner" style="width: 35%" />
+        </center>
+      </section>
+      <hr class="bord" />
+      <section id="hero" class="space-top">
+        <center>
+          <img src="images/banr.jpg" alt="banner" style="width: 95%" />
+        </center>
+      </section>
+      <section id="texts">
+        <p><strong>Dear Lowe's Shopper,</strong></p>
+        <p>You have been selected to get an exclusive reward!</p>
+        <p>
+          To qualify for this special offer, simply complete our 30-second
+          marketing survey about your experiences with <strong>Lowe's.</strong>
+        </p>
+        <p>Click <strong>OK</strong> to start</p>
+        <center>
+          <div class="btn" ">
+            <a href="#" target="_blank"> Ok</a>
+          </div>
+        </center>
+      </section>
+
+      <footer>© Copyright 2023 – Lowe's. All Rights Reserved.</footer>
+    </div>
+  </body>
+</html>
