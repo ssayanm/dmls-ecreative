@@ -196,6 +196,7 @@
       background: var(--secondaryColor);
       padding: 10px;
       font-size: 1.65rem;
+      color: #fff;
     }
 
     /* Media Query: Large Smartphone (Vertical) */
@@ -229,17 +230,19 @@
   <body>
     <div class="container">
       <!-- Sections -->
-
-      <section>
-        <img src="images/londonskillsv2.png" alt="logo" />
+      <section id="hero">
+        <img src="images/londonskillsv2.png" alt="logo" style="width: 12%" />
+        <h3>Thanks for completing the course</h3>
       </section>
+
       <section><img src="images/demo1.jpg" alt="coursecompleted" /></section>
       <section id="texts">
         <div class="text">
           <p>
             The most popular course taken after
             <strong>
-              “The Lost Art of Being Present” is “Stress Annihilator”.
+              <a href="#" target="_blank">“The Lost Art of Being Present”</a>
+              is <a href="#" target="_blank">“Stress Annihilator”.</a>
             </strong>
             Why not give that a go today?
           </p>
