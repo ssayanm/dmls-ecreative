@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London Skills Hub</title>
+
+    <link rel="icon" type="image/png" href="images/lsfav.jpg" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    :root {
+      --primaryColor: #fff;
+      --secondaryColor: #1b3472;
+      --primaryColorAlt: #222222;
+      --grey: #888888;
+      --black: #101010;
+      --maxWidth: 730px;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      background: var(--primaryColor);
+      font-family: "Montserrat", sans-serif;
+      color: var(--black);
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    strong {
+      /* font-size: 1.25rem; */
+      font-weight: bold;
+      color: var(--secondaryColor);
+    }
+
+    img {
+      object-fit: cover;
+      /* width: 100%; */
+    }
+
+    .container {
+      max-width: var(--maxWidth);
+      margin: auto;
+      overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .linka {
+      font-weight: bold;
+      color: var(--secondaryColor);
+    }
+
+    ul {
+      line-height: 1.5em;
+      margin: 10px 0 15px;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+
+      text-align: center;
+
+      color: var(--secondaryColor);
+      font-weight: bold;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+    }
+
+    li img {
+      width: 7%;
+    }
+
+    li.checkmark::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 5px;
+      width: 4px;
+      height: 12px;
+      border: solid var(--secondaryColor);
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    .title:after {
+      /* this is the border */
+      content: "";
+      display: block;
+      width: 6em;
+      max-width: 70%;
+      border-bottom: 0.1em solid var(--secondaryColor);
+      margin: 0.1em auto 0;
+    }
+
+    .btn {
+      background-color: var(--secondaryColor);
+      color: var(--primaryColor);
+      padding: 15px 25px;
+      font-size: 1.65rem;
+      /* border-radius: 7px; */
+      text-align: center;
+      border: 1px solid var(--primaryColor);
+      font-weight: bold;
+      cursor: pointer;
+      /* width: 100%; */
+      line-height: 2rem;
+      box-shadow: 0px 5px 10px var(--grey);
+    }
+
+    .btn-alt {
+      background-color: red;
+      color: #fff;
+      padding: 5px 20px;
+      font-weight: bold;
+    }
+    .btn:hover,
+    .btn-alt:hover {
+      background-color: var(--secondaryColor);
+    }
+
+    .space-top {
+      margin-top: 30px;
+    }
+    .space-bottom {
+      margin-bottom: 30px;
+    }
+    .space {
+      margin: 30px;
+    }
+    #buttons {
+      padding: 20px 0 40px 0;
+    }
+
+    #texts {
+      padding: 25px 15px;
+    }
+
+    .para {
+      padding: 5px;
+      /* background-color: var(--primaryColorAlt); */
+      color: var(--primaryColorAlt);
+      font-size: 2rem;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .box-alt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      /* padding-bottom: 20px; */
+    }
+
+    .box .text {
+      flex: 50%;
+    }
+
+    footer {
+      background-color: var(--black);
+      margin: auto;
+      text-align: center;
+      color: var(--primaryColor);
+      padding: 10px 5px;
+    }
+
+    .underline {
+      width: 20px;
+      border-top: 5px solid var(--secondaryColor);
+    }
+
+    /* Media Query: Large Smartphone (Vertical) */
+    @media (max-width: 767px) {
+      section {
+        padding: 10px;
+      }
+      .box {
+        padding-bottom: 0px;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+      }
+
+      li {
+        left: 0;
+        align-items: flex-start;
+
+        text-align: left;
+        margin: 10px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Sections -->
+      <section id="hero">
+        <center><img src="images/logo.jpg" alt="banner" /></center>
+      </section>
+      <section id="texts1">
+        <div class="text">
+          <p><strong>Dear %%FIRSTNAME%%,</strong></p>
+          <p>
+            Thank you for choosing our platform to enhance your knowledge and
+            skills. We are pleased to inform you that your order for a course
+            has been successfully processed. This email serves as a confirmation
+            of your purchase and provides details about the course you have
+            selected.
+          </p>
+
+          <div class="box">
+            <div class="imgbox">
+              <img src="images/lsfav.jpg" alt="family" style="width: 75px" />
+            </div>
+            <div class="text">
+              <h3>Course Details:</h3>
+            </div>
+          </div>
+
+          <p><strong>Course Title: </strong>[Title of the Course]</p>
+          <p><strong>Course Code: </strong>[Course Code, if applicable]</p>
+          <p><strong>Order Number:</strong> [Order Number]</p>
+
+          <div class="box">
+            <div class="imgbox">
+              <img src="images/lsfav.jpg" alt="family" style="width: 75px" />
+            </div>
+            <div class="text">
+              <h3>Course Description:</h3>
+            </div>
+          </div>
+
+          <p>
+            [Provide a brief description of the course content and objectives.]
+          </p>
+
+          <h3>Access Instructions &#8608;</h3>
+          <p>To access the course, please follow these steps:</p>
+          <ol>
+            <li>1. Visit our website at www.Londonskillshub.co.uk</li>
+            <li>2. Log in using your registered email address and password.</li>
+            <li>3. Navigate to the "Find a Course" section.</li>
+            <li>4. Locate the purchased course and click on it to start.</li>
+          </ol>
+
+          <p>
+            If you encounter any issues during the registration or accessing
+            process, please do not hesitate to contact our customer support team
+            at
+            <a
+              href="mailto:support@londonskillshub.co.uk"
+              target="_blank"
+              class="linka"
+              >support@londonskillshub.co.uk </a
+            >and our experts instructor
+          </p>
+
+          <p>
+            Please note that access to the course content will be available
+            immediately upon logging in. You can study at your own pace and
+            revisit the material as needed until the completion of the course.
+          </p>
+
+          <p>
+            We hope you find this course valuable and enjoyable. Should you have
+            any questions or require further assistance, please feel free to
+            reach out to us.
+          </p>
+
+          <p>
+            Thank you once again for choosing our platform. We wish you success
+            in your learning journey!
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        © Copyright 2023 – London Skills Hub. All Rights Reserved.
+      </footer>
+    </div>
+  </body>
+</html>
