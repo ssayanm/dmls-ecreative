@@ -30,7 +30,7 @@
       background: var(--primaryColor);
       /* font-family: "Montserrat", sans-serif; */
       font-family: "Comfortaa", cursive;
-      color: var(--black);
+      color: var(--primaryColor);
       font-size: 1.2rem;
       line-height: 1.8rem;
     }
@@ -56,52 +56,6 @@
     a {
       text-decoration: none;
       color: inherit;
-    }
-
-    ul {
-      line-height: 1.5em;
-      margin: 10px 0 15px;
-      padding: 0;
-    }
-
-    li {
-      list-style: none;
-      position: relative;
-      padding: 0 0 0 30px;
-      text-align: center;
-
-      color: var(--secondaryColor);
-      font-weight: bold;
-      font-style: italic;
-      display: flex;
-      align-items: center;
-      left: 20%;
-    }
-
-    li img {
-      width: 7%;
-    }
-
-    li.checkmark::before {
-      content: "";
-      position: absolute;
-      left: 12px;
-      top: 5px;
-      width: 4px;
-      height: 12px;
-      border: solid var(--secondaryColor);
-      border-width: 0 3px 3px 0;
-      transform: rotate(45deg);
-    }
-
-    .title:after {
-      /* this is the border */
-      content: "";
-      display: block;
-      width: 6em;
-      max-width: 70%;
-      border-bottom: 0.1em solid var(--secondaryColor);
-      margin: 0.1em auto 0;
     }
 
     .btn {
@@ -144,41 +98,7 @@
     }
 
     #texts {
-      padding: 5px 15px;
-    }
-
-    .para {
-      padding: 5px;
-      /* background-color: var(--primaryColorAlt); */
-      color: var(--primaryColorAlt);
-      font-size: 2rem;
-    }
-
-    .box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding-top: 30px;
-      padding-bottom: 20px;
-    }
-
-    .box-alt {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding-top: 30px;
-      /* padding-bottom: 20px; */
-    }
-
-    .box .text {
-      flex: 50%;
-    }
-
-    .box .imgbox {
-      flex: 50%;
-      margin-bottom: 20px;
+      padding: 5px 30px;
     }
 
     footer {
@@ -189,46 +109,14 @@
       padding: 10px 5px;
     }
 
-    .underline {
-      width: 20px;
-      border-top: 5px solid var(--secondaryColor);
-    }
-
-    #hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: var(--secondaryColor);
-      padding: 10px;
-      font-size: 1.65rem;
-      color: #fff;
+    h1 {
+      line-height: 2rem;
     }
 
     /* Media Query: Large Smartphone (Vertical) */
     @media (max-width: 767px) {
-      .box {
-        padding-bottom: 0px;
-        flex-direction: column-reverse;
-        padding: 20px;
-      }
-      .box .text {
-        flex: 100%;
-      }
-
-      .box .imgbox {
-        flex: 100%;
-      }
-
       .btn {
         font-size: 1.2rem;
-      }
-
-      li {
-        left: 0;
-        align-items: flex-start;
-
-        text-align: left;
-        margin: 10px;
       }
     }
   </style>
@@ -237,6 +125,15 @@
       <!-- Sections -->
 
       <section><img src="images/hero.jpg" alt="Stitch" /></section>
+
+      <div id="texts">
+        <h1>The 2-step stress routine backed by science</h1>
+        <p>
+          Meet Stitch, the daily probiotic supplement and app for confidently
+          building stress resilience.
+        </p>
+        <p>Led by science. Designed for real life.</p>
+      </div>
       <center class="bord">
         <div class="btn space-bottom space-top">
           <a href="#" target="_blank">Take this course</a>
