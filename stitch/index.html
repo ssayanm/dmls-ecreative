@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stitch</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <style>
+    /* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+    @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
+
+    :root {
+      --primaryColor: #fff;
+      --secondaryColor: #142e24;
+      --primaryColorAlt: #b1f071;
+      --grey: #888888;
+      --black: #101010;
+      --hover: #8cbe59;
+      --maxWidth: 730px;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      background: var(--primaryColor);
+      /* font-family: "Montserrat", sans-serif; */
+      font-family: "Comfortaa", cursive;
+      color: var(--black);
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    strong {
+      /* font-size: 1.25rem; */
+      font-weight: bold;
+      color: var(--secondaryColor);
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .container {
+      max-width: var(--maxWidth);
+      margin: auto;
+      overflow: hidden;
+      background: var(--secondaryColor);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      line-height: 1.5em;
+      margin: 10px 0 15px;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 30px;
+      text-align: center;
+
+      color: var(--secondaryColor);
+      font-weight: bold;
+      font-style: italic;
+      display: flex;
+      align-items: center;
+      left: 20%;
+    }
+
+    li img {
+      width: 7%;
+    }
+
+    li.checkmark::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 5px;
+      width: 4px;
+      height: 12px;
+      border: solid var(--secondaryColor);
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    .title:after {
+      /* this is the border */
+      content: "";
+      display: block;
+      width: 6em;
+      max-width: 70%;
+      border-bottom: 0.1em solid var(--secondaryColor);
+      margin: 0.1em auto 0;
+    }
+
+    .btn {
+      background-color: var(--primaryColorAlt);
+      color: var(--secondaryColor);
+      padding: 13px 20px;
+      font-size: 1.25rem;
+      /* border-radius: 7px; */
+      text-align: center;
+      border-radius: 7px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 230px;
+      line-height: 2rem;
+      box-shadow: 0px 5px 10px var(--grey);
+    }
+
+    .btn-alt {
+      background-color: red;
+      color: #fff;
+      padding: 5px 20px;
+      font-weight: bold;
+    }
+    .btn:hover,
+    .btn-alt:hover {
+      background-color: var(--hover);
+    }
+
+    .space-top {
+      margin-top: 30px;
+    }
+    .space-bottom {
+      margin-bottom: 30px;
+    }
+    .space {
+      margin: 30px;
+    }
+    #buttons {
+      padding: 20px 0 40px 0;
+    }
+
+    #texts {
+      padding: 5px 15px;
+    }
+
+    .para {
+      padding: 5px;
+      /* background-color: var(--primaryColorAlt); */
+      color: var(--primaryColorAlt);
+      font-size: 2rem;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+
+    .box-alt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      /* padding-bottom: 20px; */
+    }
+
+    .box .text {
+      flex: 50%;
+    }
+
+    .box .imgbox {
+      flex: 50%;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: var(--secondaryColor);
+      margin: auto;
+      text-align: center;
+      color: var(--primaryColor);
+      padding: 10px 5px;
+    }
+
+    .underline {
+      width: 20px;
+      border-top: 5px solid var(--secondaryColor);
+    }
+
+    #hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--secondaryColor);
+      padding: 10px;
+      font-size: 1.65rem;
+      color: #fff;
+    }
+
+    /* Media Query: Large Smartphone (Vertical) */
+    @media (max-width: 767px) {
+      .box {
+        padding-bottom: 0px;
+        flex-direction: column-reverse;
+        padding: 20px;
+      }
+      .box .text {
+        flex: 100%;
+      }
+
+      .box .imgbox {
+        flex: 100%;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+      }
+
+      li {
+        left: 0;
+        align-items: flex-start;
+
+        text-align: left;
+        margin: 10px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Sections -->
+
+      <section><img src="images/hero.jpg" alt="Stitch" /></section>
+      <center class="bord">
+        <div class="btn space-bottom space-top">
+          <a href="#" target="_blank">Take this course</a>
+        </div>
+      </center>
+      <section><img src="images/2.jpg" alt="Stitch" /></section>
+      <center class="bord">
+        <div class="btn space-bottom space-top">
+          <a href="#" target="_blank">Take this course</a>
+        </div>
+      </center>
+      <section>
+        <center>
+          <img src="images/pubb.jpg" alt="Stitch" style="width: 90%" />
+        </center>
+      </section>
+
+      <footer>© Copyright 2023 – Stitch Care Corp. All Rights Reserved.</footer>
+    </div>
+  </body>
+</html>
